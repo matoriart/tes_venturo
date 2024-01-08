@@ -40,7 +40,6 @@ if(isset($_GET['tahun'])){
                                 <select id="my-select" class="form-control" name="tahun">
                                     <option value="">Pilih Tahun</option>
                                     <option value="2021" selected="">2021</option>
-                                    <option value="2022" selected="">2022</option>
                                 </select>
                             </div>
                         </div>
@@ -77,9 +76,6 @@ if(isset($_GET['tahun'])){
                             </tr>
                         </thead>
                         <tbody>
-                            
-                                
-                           
                             <tr>
                                 <td class="table-secondary" colspan="14"><b>Makanan</b></td>
                             </tr>
@@ -93,86 +89,74 @@ if(isset($_GET['tahun'])){
                                  <td style="text-align: right;"><b>665,000</b></td>
                             </tr>
                             <tr>
+                                <td>Mie Freno</td>
+                                @foreach($table1 as $item)
+                                 <td style="text-align: right;">
+                                    {{$item->total}}
+                                </td>
+                                @endforeach
+                                 <td style="text-align: right;"><b>440,000</b></td>
+                            </tr>
+                            <tr>
+                                <td>Nasi Teriyaki</td>
+                                @foreach($table2 as $item)
+                                 <td style="text-align: right;">
+                                    {{$item->total}}
+                                </td>
+                                @endforeach
+                                 <td style="text-align: right;"><b>225,000</b></td>
+                            </tr>
+                            <tr>
                                 <td class="table-secondary" colspan="14"><b>Minuman</b></td>
                             </tr>
                             <tr>
                                 <td>Teh Hijau</td>
-                                <td style="text-align: right;">
-                                    60,000
+                                @foreach($table3 as $item)
+                                 <td style="text-align: right;">
+                                    {{$item->total}}
                                 </td>
-                                <td style="text-align: right;">
-                                    70,000
-                                </td>
-                                <td style="text-align: right;">
-                                    90,000
-                                </td>
-                                <td style="text-align: right;">
-                                    190,000
-                                </td>
-                                <td style="text-align: right;">
-                                    10,000
-                                </td>
-                                <td style="text-align: right;">
-                                    150,000
-                                </td>
-                                <td style="text-align: right;">
-                                    40,000
-                                </td>
-                                <td style="text-align: right;">
-                                    10,000
-                                </td>
-                                <td style="text-align: right;">
-                                    40,000
-                                </td>
-                                <td style="text-align: right;">
-                                </td>
-                                <td style="text-align: right;">
-                                    20,000
-                                </td>
-                                <td style="text-align: right;">
-                                    30,000
-                                </td>
-                                <td style="text-align: right;"><b>710,000</b></td>
+                                @endforeach
+                                 <td style="text-align: right;"><b>710,000</b></td>
                             </tr>
                             <tr class="table-dark">
                                 <td><b>Total</b></td>
                                 <td style="text-align: right;">
-                                    <b>469,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>605,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>350,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>604,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>257,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>464,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>228,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>303,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>229,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>169,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>157,000</b>
+                                    <b></b>
                                 </td>
                                 <td style="text-align: right;">
-                                    <b>130,000</b>
+                                    <b></b>
                                 </td>
-                                <td style="text-align: right;"><b>3,965,000</b></td>
+                                <td style="text-align: right;"><b>???</b></td>
                             </tr>
                         </tbody>
                     </table>
